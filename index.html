@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        @media only screen and (max-width:455px)
+        {
+            ul li{
+                ---color:blue;
+                background-color:var(---color) ;
+            }
+
+            body{
+                ---seccolor:rgb(44, 44, 243);
+                background-color:var(---seccolor);
+            }
+
+            ul li{
+                flex-direction: column;
+            }
+        }
+
+        :root{
+            ---color:pink;
+            ---seccolor:rgb(250, 213, 219);
+
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul{
+            display: flex;
+        }
+
+        ul li{
+            list-style: none;
+            padding: 23px;
+            font-weight: bolder;
+        }
+
+        body{
+            background-color: var(---seccolor);
+        }
+
+        .nav{
+            background-color: var(---color);
+        }
+
+        ul li a{
+            color:rgb(0, 0, 0);
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="\">Home</a></li>
+            <li><a href="\">About</a></li>
+            <li><a href="\">Serivces</a></li>
+            <li><a href="\">Contact Us</a> </li>
+        </ul>
+    </div>
+</body>
+</html>
